@@ -7,13 +7,25 @@ SwiftUIPathway is a cutting-edge library crafted to illuminate the path for Swif
 
 ## Features
 
+- **Clean Architecture Support**: With SwiftUIPathway, adhering to the principles of clean architecture becomes natural, enabling you to build scalable and maintainable applications.
 - **SwiftUI Navigation**: Effortlessly manage all types of navigation in SwiftUI, from horizontal transitions to full-screen modal presentations.
 - **Network Layer Integration**: Harness the power of Alamofire for all your network requests, making API calls seamless and efficient.
 - **Dependency Injection**: Utilize our built-in support for dependency injection using a Factory pattern, promoting a decoupled and testable codebase.
-- **Clean Architecture Support**: With SwiftUIPathway, adhering to the principles of clean architecture becomes natural, enabling you to build scalable and maintainable applications.
 
 ## Quick Start
 
+### Embracing Clean Architecture
+
+SwiftUIPathway facilitates a clean architectural approach, enabling you to structure your application into coherent layers:
+
+- **View**: Your UI layer, where SwiftUI views reside.
+- **ViewModel**: Manages the presentation logic, bridging the View and UseCase.
+- **UseCase**: Encapsulates specific business logic of the application.
+- **Repository**: Acts as the data access layer, managing data sources.
+- **Domain Model**: Represents the core business logic of the application.
+- **DTO (Data Transfer Objects)**: Used for transferring data between layers.
+- **Router**: Manages navigation logic within the modules.
+- 
 ### Navigation
 
 Navigate through your app with ease:
@@ -44,18 +56,6 @@ Inject dependencies anywhere with simplicity:
 ```swift
 @Injected(\.userProfile) var userProfileUseCase: UserProfileUseCase
 ```
-
-### Embracing Clean Architecture
-
-SwiftUIPathway facilitates a clean architectural approach, enabling you to structure your application into coherent layers:
-
-- **View**: Your UI layer, where SwiftUI views reside.
-- **ViewModel**: Manages the presentation logic, bridging the View and UseCase.
-- **UseCase**: Encapsulates specific business logic of the application.
-- **Repository**: Acts as the data access layer, managing data sources.
-- **Domain Model**: Represents the core business logic of the application.
-- **DTO (Data Transfer Objects)**: Used for transferring data between layers.
-- **Router**: Manages navigation logic within the application.
 
 By integrating SwiftUIPathway into your SwiftUI projects, you gain access to a suite of tools designed to streamline your development process, allowing you to focus on what matters most: creating amazing applications. Start with SwiftUIPathway today and experience the difference in your SwiftUI development journey.
 
