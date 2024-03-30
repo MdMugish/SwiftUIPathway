@@ -1,0 +1,6 @@
+framework module SwiftUIPathway {
+  umbrella header "SwiftUIPathway.h"
+  export *
+
+  module * { export * }
+}
