@@ -24,8 +24,10 @@ SwiftUIPathway facilitates a clean architectural approach, enabling you to struc
 - **Repository**: Acts as the data access layer, managing data sources.
 - **Domain Model**: Represents the core business logic of the application.
 - **DTO (Data Transfer Objects)**: Used for transferring data between layers.
-- **Router**: Manages navigation logic within the modules.
-- 
+- **Routers for View**: Manages navigation logic within the modules.
+- **Routers for Network Call**: Routers for network calls organize and encapsulate all details of API requests, promoting clean, reusable, and maintainable code.
+
+ 
 ### Navigation
 
 Navigate through your app with ease:
