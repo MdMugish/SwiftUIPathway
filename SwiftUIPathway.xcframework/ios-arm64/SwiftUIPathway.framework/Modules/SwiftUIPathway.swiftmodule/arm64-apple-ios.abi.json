@@ -462,6 +462,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SwiftUIPathway",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "Fonts",
         "printedName": "Fonts",
@@ -2370,17 +2380,13 @@
       },
       {
         "kind": "Import",
-        "name": "AppsFlyerLib",
-        "printedName": "AppsFlyerLib",
-        "declKind": "Import",
-        "moduleName": "SwiftUIPathway"
-      },
-      {
-        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
-        "moduleName": "SwiftUIPathway"
+        "moduleName": "SwiftUIPathway",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -5139,10 +5145,7 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "SwiftUIPathway",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "SwiftUIPathway"
       },
       {
         "kind": "Import",
@@ -5153,34 +5156,64 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "SwiftUIPathwayInit",
-        "printedName": "SwiftUIPathwayInit",
+        "name": "SwiftUIPathwayAccessManager",
+        "printedName": "SwiftUIPathwayAccessManager",
         "children": [
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "SwiftUIPathwayInit",
-                "printedName": "SwiftUIPathway.SwiftUIPathwayInit",
-                "usr": "s:14SwiftUIPathway0aB4InitC"
+                "name": "SwiftUIPathwayAccessManager",
+                "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager",
+                "usr": "s:14SwiftUIPathway0aB13AccessManagerC"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "s:14SwiftUIPathway0aB4InitCACycfc",
-            "mangledName": "$s14SwiftUIPathway0aB4InitCACycfc",
+            "declKind": "Var",
+            "usr": "s:14SwiftUIPathway0aB13AccessManagerC6sharedACvpZ",
+            "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC6sharedACvpZ",
             "moduleName": "SwiftUIPathway",
+            "static": true,
             "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
               "AccessControl"
             ],
-            "init_kind": "Designated"
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SwiftUIPathwayAccessManager",
+                    "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager",
+                    "usr": "s:14SwiftUIPathway0aB13AccessManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftUIPathway0aB13AccessManagerC6sharedACvgZ",
+                "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC6sharedACvgZ",
+                "moduleName": "SwiftUIPathway",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Function",
-            "name": "initialized",
-            "printedName": "initialized()",
+            "name": "initialize",
+            "printedName": "initialize()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5189,8 +5222,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14SwiftUIPathway0aB4InitC11initializedyyF",
-            "mangledName": "$s14SwiftUIPathway0aB4InitC11initializedyyF",
+            "usr": "s:14SwiftUIPathway0aB13AccessManagerC10initializeyyF",
+            "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC10initializeyyF",
             "moduleName": "SwiftUIPathway",
             "declAttributes": [
               "AccessControl"
@@ -5199,12 +5232,13 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:14SwiftUIPathway0aB4InitC",
-        "mangledName": "$s14SwiftUIPathway0aB4InitC",
+        "usr": "s:14SwiftUIPathway0aB13AccessManagerC",
+        "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC",
         "moduleName": "SwiftUIPathway",
         "declAttributes": [
           "AccessControl"
-        ]
+        ],
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -11708,10 +11742,7 @@
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
-        "moduleName": "SwiftUIPathway",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "SwiftUIPathway"
       },
       {
         "kind": "Import",
@@ -16913,56 +16944,56 @@
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1238,
+      "offset": 1260,
       "length": 120,
       "value": "\"Access denied. Please get access from SwiftUIPathway and make sure make sure you initialized SwiftUIPathwayInit class.\""
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
       "kind": "BooleanLiteral",
-      "offset": 1429,
+      "offset": 1451,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
       "kind": "BooleanLiteral",
-      "offset": 1501,
+      "offset": 1523,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1779,
+      "offset": 1823,
       "length": 120,
       "value": "\"Access denied. Please get access from SwiftUIPathway and make sure make sure you initialized SwiftUIPathwayInit class.\""
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
       "kind": "BooleanLiteral",
-      "offset": 1979,
+      "offset": 2023,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
       "kind": "BooleanLiteral",
-      "offset": 2054,
+      "offset": 2098,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
       "kind": "BooleanLiteral",
-      "offset": 2118,
+      "offset": 2162,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayInit.swift",
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayRouter.swift",
       "kind": "BooleanLiteral",
-      "offset": 169,
+      "offset": 173,
       "length": 5,
       "value": "false"
     },
@@ -17529,49 +17560,63 @@
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 761,
+      "offset": 750,
       "length": 72,
       "value": "\"Access denied. Please request SwiftUIPathway to allow on this bundleId\""
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1097,
+      "offset": 1086,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 1319,
+      "offset": 1308,
       "length": 6,
       "value": "\"date\""
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
       "kind": "Array",
-      "offset": 1585,
+      "offset": 1574,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 2022,
+      "offset": 2033,
       "length": 72,
       "value": "\"Access denied. Please request SwiftUIPathway to allow on this bundleId\""
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2358,
+      "offset": 2369,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
       "kind": "Array",
-      "offset": 2580,
+      "offset": 2591,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3179,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
+      "kind": "Array",
+      "offset": 3401,
       "length": 2,
       "value": "[]"
     },

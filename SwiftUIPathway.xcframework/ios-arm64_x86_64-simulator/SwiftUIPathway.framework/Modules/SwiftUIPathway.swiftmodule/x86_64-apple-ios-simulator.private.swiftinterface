@@ -2,7 +2,6 @@
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
 // swift-module-flags: -target x86_64-apple-ios17.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SwiftUIPathway
 import Alamofire
-import AppsFlyerLib
 import Combine
 import DeveloperToolsSupport
 import Factory
@@ -226,9 +225,9 @@ extension SwiftUI.View {
   public static func image(named: Swift.String) -> SwiftUI.Image
   @objc deinit
 }
-public class SwiftUIPathwayInit {
-  public init()
-  public func initialized()
+@_hasMissingDesignatedInitializers public class SwiftUIPathwayAccessManager {
+  public static let shared: SwiftUIPathway.SwiftUIPathwayAccessManager
+  public func initialize()
   @objc deinit
 }
 public protocol Analytics {
