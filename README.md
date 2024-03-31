@@ -77,8 +77,6 @@ SwiftUIPathway depends on several external packages for its full functionality. 
 dependencies: [
     .package(url: "https://github.com/hmlongco/Factory.git", from: "1.3.7"),
     .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.9.0"), -> **Make sure you add only AlamofireDynamic**
-    .package(url: "https://github.com/kishikawakatsumi/KeychainAccess.git", .branch("master")),
-    .package(url: "https://github.com/AppsFlyerSDK/AppsFlyerFramework.git", from: "6.13.2")
 ]
 ```
 
@@ -95,7 +93,7 @@ import SwiftUIPathway
 Before using SwiftUIPathway, it must be initialized. This ensures that the framework checks for access rights based on your bundle ID:
 
 ```swift
-SwiftUIPathwayInit()
+SwiftUIPathwayAccessManager.shared.initialize()
 ```
 
 ### Obtaining Access
