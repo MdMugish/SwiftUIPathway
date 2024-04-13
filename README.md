@@ -75,7 +75,7 @@ SwiftUIPathway depends on several external packages for its full functionality. 
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/hmlongco/Factory.git", from: "1.3.7"),
+    .package(url: "https://github.com/hmlongco/Factory.git"),
     .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.9.0"), -> **Make sure you add only AlamofireDynamic**
 ]
 ```
@@ -171,7 +171,7 @@ enum ProfileRoute: RouteProtocol {
     
     case profileDetails(id: String)
     
-    // You can add "n" number of navigations related to profile view
+    // You can add "n" number of navigations related to the profile view
    
     var destination: AnyView {
         switch self {
@@ -206,5 +206,46 @@ struct ContentView: View {
 }
 ```
 
+### Profile Repository 
+```swift
+import SwiftUIPathway
+import Factory
+
+final class DefaultProfileRepository: ProfileRepository {
+    
+    @Injected(\.apiManager) var apiManager: ApiManager
+    
+    func getProfileDetails(id: String, completion: @escaping (ValueResult<ProfileDetailsModel>) -> Void) {
+        apiManager.sessionWithoutInterceptor?.request(ProfileRouter.getProfileDetails(id: id))
+            .responseDecodable(of: ProfileDetailsDTO.self) { response in
+                switch response.result {
+                case .success(let response):
+                    completion(.success(response.mapToDomaimn()))
+                case .failure(let error):
+                    completion(.failure(ErrorMapper(response: response, error: error).mapToDomain()))
+                }
+            }
+    }
+}
+
+```
+
+### Factory Container 
+```swift
+extension Container {
+    var apiManager: Factory<ApiManager> {
+        self { ApiManager() }
+            .singleton
+    }
+    
+    var profileRepository: Factory<HomeRepository> {
+        self { DefaultProfileRepository() }
+    }
+    
+    var profileUseCase: Factory<HomeUseCase> {
+        self { ProfileUseCase() }
+    }
+}
+```
 
 
