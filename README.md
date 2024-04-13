@@ -93,7 +93,7 @@ import SwiftUIPathway
 Before using SwiftUIPathway, it must be initialized. This ensures that the framework checks for access rights based on your bundle ID:
 
 ```swift
-SwiftUIPathwayAccessManager.shared.initialize()
+SwiftUIPathwayAccessManager.shared.verifyAuthorization { result in }
 ```
 
 ### Obtaining Access
@@ -107,7 +107,59 @@ if you get an error like this "iphoneos/PackageFrameworks/AlamofireDynamic.frame
 Please make sure that AlamofireDynamic.framework is correctly embedded in your app. In Xcode, go to your app target's "General" tab and look in the "Frameworks, Libraries, and Embedded Content" section. The framework should be listed here and set to "Embed & Sign". This is crucial for dynamic frameworks as they need to be bundled with the app.
 
 
-## Code Samples
+## Setup code sample
+
+### Initialization of SwiftUIPathway in ViewModel
+```swift
+import SwiftUIPathway
+
+class HomeScreenViewModel: ObservableObject {
+    @Published var authState: SwiftUIPathwayAccessManager.AuthorizationState?
+    
+    init() {
+        SwiftUIPathwayAccessManager.shared.verifyAuthorization { result in
+            self.authState = result
+        }
+    }
+}
+```
+
+### Adding SwiftUIPathway navigation for the first view
+```swift
+import SwiftUI
+import SwiftUIPathway
+
+struct HomeScreen: View {
+    
+    @StateObject var navigationState = NavigationState<ProfileRoute>()
+    @StateObject var viewModel = HomeScreenViewModel()
+    var body: some View {
+        if viewModel.authState == .allowed {
+            CustomNavView(navigationState: navigationState) {
+                VStack {
+                    Button(action: {
+                        navigationState.selectedRoute = .profileDetails(id: "UniqueId")
+                    }) {
+                        Text("Horizaltal Navigation")
+                    }
+                    
+                    Button(action: {
+                        navigationState.selectedFullScreenRoute = .profileDetails(id: "UniqueId")
+                    }) {
+                        Text("Vertical Navigation")
+                    }
+                }
+                .customNavigationDestination(navigationState)
+                .customFullScreenCover(navigationState)
+            }
+        }
+        else {
+            Text(viewModel.authState?.rawValue ?? "")
+        }
+    }
+}
+```
+
 
 ### Router
 ```swift
@@ -131,42 +183,24 @@ enum ProfileRoute: RouteProtocol {
 }
 ```
 
-### First View
+### Navigation after setup
 ```swift
 struct ContentView: View {
     
     @StateObject var navigationState = NavigationState<ProfileRoute>()
     
     var body: some View {
+// CustomNavView is required if this view is the first view or presented vertically, in the case of horizontal navigation, we don't need to add CustomNavView
         CustomNavView(navigationState: navigationState) {
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                Text("Hello, world!")
-                    .foregroundStyle(Colors.Primary.solidBlue)
-                
                 Button(action: {
                     navigationState.selectedRoute = .profileDetails(id: "UniqueId")
                 }) {
-                    Text("Profile details - navigatoin")
-                }
-                
-                Button(action: {
-                    navigationState.selectedFullScreenRoute = .profileDetails(id: "UniqueId")
-                }) {
-                    Text("Profile details - full screen")
+                    Text("Action")
                 }
             }
             .customNavigationDestination(navigationState)
             .customFullScreenCover(navigationState)
-            .overlay(
-                CustomNavLink(
-                    isActive: $navigationState.shouldNavigate,
-                    route: navigationState.selectedRoute,
-                    label: { EmptyView() }
-                )
-            )
         }
     }
 }
