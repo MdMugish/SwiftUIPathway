@@ -177,7 +177,7 @@ enum ProfileRoute: RouteProtocol {
         switch self {
         
         case .profileDetails(let id):
-            return AnyView(Text("hello \(id)"))
+            return ProfileDetailScreen(id: id).eraseToAnyView()
         }
     }
 }
@@ -248,4 +248,45 @@ extension Container {
 }
 ```
 
+### Network Router
+```swift
+enum ProfileRouter: BaseRouter {
+    
+    case getProfileDetails(id: String)
+    
+    var baseURL: String {
+        return "baseurl.com"
+    }
+    
+    var path: String {
+        switch self {
+        case .getProfileDetails(let id):
+            return "/profile/\(id)"
+        }
+        
+    }
+    
+    var method: HTTPMethod {
+        return .get
+    }
+    
+    var encoder: ParameterEncoder {
+        if method == .get {
+            return URLEncodedFormParameterEncoder()
+        } else {
+            return JSONParameterEncoder()
+        }
+    }
+}
+
+extension ProfileRouter: URLRequestConvertible {
+    func asURLRequest() throws -> URLRequest {
+        let urlRequest = try baseURL.asURL().appendingPathComponent(path)
+        var request = URLRequest(url: urlRequest)
+        request.method = method
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        return request
+    }
+}
+```
 
