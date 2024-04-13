@@ -5155,10 +5155,364 @@
         "moduleName": "SwiftUIPathway"
       },
       {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "SwiftUIPathway"
+      },
+      {
         "kind": "TypeDecl",
         "name": "SwiftUIPathwayAccessManager",
         "printedName": "SwiftUIPathwayAccessManager",
         "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "AuthorizationState",
+            "printedName": "AuthorizationState",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "initial",
+                "printedName": "initial",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState.Type) -> SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthorizationState",
+                        "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                        "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthorizationState",
+                            "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                            "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO7initialyA2EmF",
+                "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO7initialyA2EmF",
+                "moduleName": "SwiftUIPathway"
+              },
+              {
+                "kind": "Var",
+                "name": "isLoading",
+                "printedName": "isLoading",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState.Type) -> SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthorizationState",
+                        "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                        "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthorizationState",
+                            "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                            "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO9isLoadingyA2EmF",
+                "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO9isLoadingyA2EmF",
+                "moduleName": "SwiftUIPathway"
+              },
+              {
+                "kind": "Var",
+                "name": "denied",
+                "printedName": "denied",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState.Type) -> SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthorizationState",
+                        "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                        "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthorizationState",
+                            "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                            "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO6deniedyA2EmF",
+                "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO6deniedyA2EmF",
+                "moduleName": "SwiftUIPathway"
+              },
+              {
+                "kind": "Var",
+                "name": "allowed",
+                "printedName": "allowed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState.Type) -> SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthorizationState",
+                        "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                        "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthorizationState",
+                            "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                            "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO7allowedyA2EmF",
+                "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO7allowedyA2EmF",
+                "moduleName": "SwiftUIPathway"
+              },
+              {
+                "kind": "Var",
+                "name": "failed",
+                "printedName": "failed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState.Type) -> SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthorizationState",
+                        "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                        "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthorizationState",
+                            "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                            "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO6failedyA2EmF",
+                "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO6failedyA2EmF",
+                "moduleName": "SwiftUIPathway"
+              },
+              {
+                "kind": "Var",
+                "name": "bundleIdFailed",
+                "printedName": "bundleIdFailed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState.Type) -> SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthorizationState",
+                        "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                        "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthorizationState",
+                            "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                            "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO14bundleIdFailedyA2EmF",
+                "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO14bundleIdFailedyA2EmF",
+                "moduleName": "SwiftUIPathway"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO8rawValueSSvp",
+                "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO8rawValueSSvp",
+                "moduleName": "SwiftUIPathway",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO8rawValueSSvg",
+                    "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO8rawValueSSvg",
+                    "moduleName": "SwiftUIPathway",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthorizationState",
+                        "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                        "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO8rawValueAESgSS_tcfc",
+                "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO8rawValueAESgSS_tcfc",
+                "moduleName": "SwiftUIPathway",
+                "implicit": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO",
+            "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO",
+            "moduleName": "SwiftUIPathway",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "shared",
@@ -5212,18 +5566,36 @@
           },
           {
             "kind": "Function",
-            "name": "initialize",
-            "printedName": "initialize()",
+            "name": "verifyAuthorization",
+            "printedName": "verifyAuthorization(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthorizationState",
+                    "printedName": "SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState",
+                    "usr": "s:14SwiftUIPathway0aB13AccessManagerC18AuthorizationStateO"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:14SwiftUIPathway0aB13AccessManagerC10initializeyyF",
-            "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC10initializeyyF",
+            "usr": "s:14SwiftUIPathway0aB13AccessManagerC19verifyAuthorization10completionyyAC0F5StateOc_tF",
+            "mangledName": "$s14SwiftUIPathway0aB13AccessManagerC19verifyAuthorization10completionyyAC0F5StateOc_tF",
             "moduleName": "SwiftUIPathway",
             "declAttributes": [
               "AccessControl"
@@ -5238,7 +5610,31 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -5655,6 +6051,63 @@
                 "declKind": "Accessor",
                 "usr": "s:14SwiftUIPathway13CustomNavViewV4bodyQrvg",
                 "mangledName": "$s14SwiftUIPathway13CustomNavViewV4bodyQrvg",
+                "moduleName": "SwiftUIPathway",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "navView",
+            "printedName": "navView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14SwiftUIPathway13CustomNavViewV03navE0Qrvp",
+            "mangledName": "$s14SwiftUIPathway13CustomNavViewV03navE0Qrvp",
+            "moduleName": "SwiftUIPathway",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftUIPathway13CustomNavViewV03navE0Qrvg",
+                "mangledName": "$s14SwiftUIPathway13CustomNavViewV03navE0Qrvg",
                 "moduleName": "SwiftUIPathway",
                 "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
                 "sugared_genericSig": "<Content where Content : SwiftUI.View>",
@@ -12081,14 +12534,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "NetworkSession",
-                "printedName": "SwiftUIPathway.NetworkSession",
-                "usr": "s:14SwiftUIPathway14NetworkSessionC"
+                "name": "Optional",
+                "printedName": "SwiftUIPathway.NetworkSession?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkSession",
+                    "printedName": "SwiftUIPathway.NetworkSession",
+                    "usr": "s:14SwiftUIPathway14NetworkSessionC"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCvp",
-            "mangledName": "$s14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCvp",
+            "usr": "s:14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCSgvp",
+            "mangledName": "$s14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCSgvp",
             "moduleName": "SwiftUIPathway",
             "declAttributes": [
               "Lazy",
@@ -12103,14 +12564,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NetworkSession",
-                    "printedName": "SwiftUIPathway.NetworkSession",
-                    "usr": "s:14SwiftUIPathway14NetworkSessionC"
+                    "name": "Optional",
+                    "printedName": "SwiftUIPathway.NetworkSession?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkSession",
+                        "printedName": "SwiftUIPathway.NetworkSession",
+                        "usr": "s:14SwiftUIPathway14NetworkSessionC"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCvg",
-                "mangledName": "$s14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCvg",
+                "usr": "s:14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCSgvg",
+                "mangledName": "$s14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCSgvg",
                 "moduleName": "SwiftUIPathway",
                 "implicit": true,
                 "accessorKind": "get"
@@ -12127,14 +12596,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "NetworkSession",
-                    "printedName": "SwiftUIPathway.NetworkSession",
-                    "usr": "s:14SwiftUIPathway14NetworkSessionC"
+                    "name": "Optional",
+                    "printedName": "SwiftUIPathway.NetworkSession?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkSession",
+                        "printedName": "SwiftUIPathway.NetworkSession",
+                        "usr": "s:14SwiftUIPathway14NetworkSessionC"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCvs",
-                "mangledName": "$s14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCvs",
+                "usr": "s:14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCSgvs",
+                "mangledName": "$s14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCSgvs",
                 "moduleName": "SwiftUIPathway",
                 "implicit": true,
                 "accessorKind": "set"
@@ -12151,8 +12628,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCvM",
-                "mangledName": "$s14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCvM",
+                "usr": "s:14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCSgvM",
+                "mangledName": "$s14SwiftUIPathway10ApiManagerC7sessionAA14NetworkSessionCSgvM",
                 "moduleName": "SwiftUIPathway",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -12166,14 +12643,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "NetworkSession",
-                "printedName": "SwiftUIPathway.NetworkSession",
-                "usr": "s:14SwiftUIPathway14NetworkSessionC"
+                "name": "Optional",
+                "printedName": "SwiftUIPathway.NetworkSession?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkSession",
+                    "printedName": "SwiftUIPathway.NetworkSession",
+                    "usr": "s:14SwiftUIPathway14NetworkSessionC"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCvp",
-            "mangledName": "$s14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCvp",
+            "usr": "s:14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCSgvp",
+            "mangledName": "$s14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCSgvp",
             "moduleName": "SwiftUIPathway",
             "declAttributes": [
               "Lazy",
@@ -12187,14 +12672,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NetworkSession",
-                    "printedName": "SwiftUIPathway.NetworkSession",
-                    "usr": "s:14SwiftUIPathway14NetworkSessionC"
+                    "name": "Optional",
+                    "printedName": "SwiftUIPathway.NetworkSession?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkSession",
+                        "printedName": "SwiftUIPathway.NetworkSession",
+                        "usr": "s:14SwiftUIPathway14NetworkSessionC"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCvg",
-                "mangledName": "$s14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCvg",
+                "usr": "s:14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCSgvg",
+                "mangledName": "$s14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCSgvg",
                 "moduleName": "SwiftUIPathway",
                 "implicit": true,
                 "accessorKind": "get"
@@ -12211,14 +12704,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "NetworkSession",
-                    "printedName": "SwiftUIPathway.NetworkSession",
-                    "usr": "s:14SwiftUIPathway14NetworkSessionC"
+                    "name": "Optional",
+                    "printedName": "SwiftUIPathway.NetworkSession?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkSession",
+                        "printedName": "SwiftUIPathway.NetworkSession",
+                        "usr": "s:14SwiftUIPathway14NetworkSessionC"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCvs",
-                "mangledName": "$s14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCvs",
+                "usr": "s:14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCSgvs",
+                "mangledName": "$s14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCSgvs",
                 "moduleName": "SwiftUIPathway",
                 "implicit": true,
                 "accessorKind": "set"
@@ -12235,8 +12736,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCvM",
-                "mangledName": "$s14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCvM",
+                "usr": "s:14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCSgvM",
+                "mangledName": "$s14SwiftUIPathway10ApiManagerC25sessionWithoutInterceptorAA14NetworkSessionCSgvM",
                 "moduleName": "SwiftUIPathway",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -16675,6 +17176,7 @@
             "sugared_genericSig": "<Self, T where Self : SwiftUI.View, T : SwiftUIPathway.RouteProtocol>",
             "declAttributes": [
               "AccessControl",
+              "Custom",
               "Custom"
             ],
             "isFromExtension": true,
@@ -16943,59 +17445,122 @@
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
-      "kind": "StringLiteral",
-      "offset": 1260,
-      "length": 120,
-      "value": "\"Access denied. Please get access from SwiftUIPathway and make sure make sure you initialized SwiftUIPathwayInit class.\""
-    },
-    {
-      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
       "kind": "BooleanLiteral",
-      "offset": 1451,
+      "offset": 1387,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
       "kind": "BooleanLiteral",
-      "offset": 1523,
+      "offset": 1459,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1900,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1975,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2039,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayInit.swift",
       "kind": "StringLiteral",
-      "offset": 1823,
-      "length": 120,
-      "value": "\"Access denied. Please get access from SwiftUIPathway and make sure make sure you initialized SwiftUIPathwayInit class.\""
+      "offset": 183,
+      "length": 80,
+      "value": "\"SwiftUIPathway has not been initialized yet. Please initialize it to continue.\""
     },
     {
-      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2023,
-      "length": 5,
-      "value": "false"
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayInit.swift",
+      "kind": "StringLiteral",
+      "offset": 289,
+      "length": 48,
+      "value": "\"Checking authorization status. Please hold on.\""
     },
     {
-      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2098,
-      "length": 5,
-      "value": "false"
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayInit.swift",
+      "kind": "StringLiteral",
+      "offset": 360,
+      "length": 72,
+      "value": "\"Access Denied. Please contact SwiftUIPathway support to obtain access.\""
     },
     {
-      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/NavigationStateProtocol.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2162,
-      "length": 5,
-      "value": "false"
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayInit.swift",
+      "kind": "StringLiteral",
+      "offset": 456,
+      "length": 52,
+      "value": "\"Welcome to SwiftUIPathway! We're glad to have you.\""
     },
     {
-      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayRouter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 173,
-      "length": 5,
-      "value": "false"
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayInit.swift",
+      "kind": "StringLiteral",
+      "offset": 531,
+      "length": 101,
+      "value": "\"Verification with SwiftUIPathway failed. Please try again or contact support if the issue persists.\""
+    },
+    {
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayInit.swift",
+      "kind": "StringLiteral",
+      "offset": 663,
+      "length": 112,
+      "value": "\"Unable to retrieve your bundle ID. Ensure your application setup is correct or contact support for assistance.\""
+    },
+    {
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayInit.swift",
+      "kind": "StringLiteral",
+      "offset": 183,
+      "length": 80,
+      "value": "\"SwiftUIPathway has not been initialized yet. Please initialize it to continue.\""
+    },
+    {
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayInit.swift",
+      "kind": "StringLiteral",
+      "offset": 289,
+      "length": 48,
+      "value": "\"Checking authorization status. Please hold on.\""
+    },
+    {
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayInit.swift",
+      "kind": "StringLiteral",
+      "offset": 360,
+      "length": 72,
+      "value": "\"Access Denied. Please contact SwiftUIPathway support to obtain access.\""
+    },
+    {
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayInit.swift",
+      "kind": "StringLiteral",
+      "offset": 456,
+      "length": 52,
+      "value": "\"Welcome to SwiftUIPathway! We're glad to have you.\""
+    },
+    {
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayInit.swift",
+      "kind": "StringLiteral",
+      "offset": 531,
+      "length": 101,
+      "value": "\"Verification with SwiftUIPathway failed. Please try again or contact support if the issue persists.\""
+    },
+    {
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/SwiftUIPathwayInit.swift",
+      "kind": "StringLiteral",
+      "offset": 663,
+      "length": 112,
+      "value": "\"Unable to retrieve your bundle ID. Ensure your application setup is correct or contact support for assistance.\""
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/View\/Navigation\/CustomNavView.swift",
@@ -17559,64 +18124,50 @@
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 750,
-      "length": 72,
-      "value": "\"Access denied. Please request SwiftUIPathway to allow on this bundleId\""
-    },
-    {
-      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1086,
+      "offset": 913,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 1308,
+      "offset": 1135,
       "length": 6,
       "value": "\"date\""
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
       "kind": "Array",
-      "offset": 1574,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2033,
-      "length": 72,
-      "value": "\"Access denied. Please request SwiftUIPathway to allow on this bundleId\""
-    },
-    {
-      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2369,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
-      "kind": "Array",
-      "offset": 2591,
+      "offset": 1401,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3179,
+      "offset": 2091,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
       "kind": "Array",
-      "offset": 3401,
+      "offset": 2313,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2969,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/mohammadmugish\/Desktop\/Most Important Project - CNH\/Last\/SwiftUIPathway\/SwiftUIPathway\/Data\/Remote\/ApiManager.swift",
+      "kind": "Array",
+      "offset": 3191,
       "length": 2,
       "value": "[]"
     },

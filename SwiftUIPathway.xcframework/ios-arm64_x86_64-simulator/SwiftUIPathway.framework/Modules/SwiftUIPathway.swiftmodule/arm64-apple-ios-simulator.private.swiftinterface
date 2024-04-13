@@ -225,9 +225,23 @@ extension SwiftUI.View {
   public static func image(named: Swift.String) -> SwiftUI.Image
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class SwiftUIPathwayAccessManager {
+@_hasMissingDesignatedInitializers public class SwiftUIPathwayAccessManager : Foundation.ObservableObject {
+  public enum AuthorizationState : Swift.String {
+    case initial
+    case isLoading
+    case denied
+    case allowed
+    case failed
+    case bundleIdFailed
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
   public static let shared: SwiftUIPathway.SwiftUIPathwayAccessManager
-  public func initialize()
+  public func verifyAuthorization(completion: @escaping (SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState) -> Swift.Void)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
 public protocol Analytics {
@@ -244,6 +258,9 @@ public struct AppNavView<Content> : SwiftUI.View where Content : SwiftUI.View {
 @_Concurrency.MainActor(unsafe) public struct CustomNavView<Content> : SwiftUI.View where Content : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public init<T>(navigationState: SwiftUIPathway.NavigationState<T>, @SwiftUI.ViewBuilder content: () -> Content) where T : SwiftUIPathway.RouteProtocol
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var navView: some SwiftUI.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s14SwiftUIPathway13CustomNavViewV4bodyQrvp", 0) __<Content>
@@ -489,11 +506,11 @@ public protocol ApiSession {
 }
 public class ApiManager {
   public init()
-  public var session: SwiftUIPathway.NetworkSession {
+  public var session: SwiftUIPathway.NetworkSession? {
     get
     set
   }
-  public var sessionWithoutInterceptor: SwiftUIPathway.NetworkSession {
+  public var sessionWithoutInterceptor: SwiftUIPathway.NetworkSession? {
     get
     set
   }
@@ -617,6 +634,9 @@ public struct AccessToken : Swift.Decodable {
 extension SwiftUIPathway.Log.LogLevel : Swift.Equatable {}
 extension SwiftUIPathway.Log.LogLevel : Swift.Hashable {}
 extension SwiftUIPathway.ErrorType : Swift.Hashable {}
+extension SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState : Swift.Equatable {}
+extension SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState : Swift.Hashable {}
+extension SwiftUIPathway.SwiftUIPathwayAccessManager.AuthorizationState : Swift.RawRepresentable {}
 extension SwiftUIPathway.CustomDivider.AlignmentAxis : Swift.Equatable {}
 extension SwiftUIPathway.CustomDivider.AlignmentAxis : Swift.Hashable {}
 extension SwiftUIPathway.DividerStyle : Swift.Equatable {}
